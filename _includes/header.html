@@ -6,6 +6,111 @@
       <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
   
       <div class="nav-actions">
+      <div class="dropdown">
+        <button class="dropbtn">≡</button>
+      <div class="dropdown-content">
+        <ul>
+          <li><a href="#algorithms">Algorithms</a></li>
+          <li><a href="#android">Android</a></li>
+          <li><a href="#angular">Angular</a></li>
+          <li><a href="#artificial-intelligence">Artificial Intelligence</a></li>
+          <li><a href="#aws">AWS</a></li>
+          <li><a href="#bigdata">Big Data</a></li>
+          <li><a href="#blockchain">Blockchain</a></li>
+          <li><a href="#bots">Bots</a></li>
+          <li><a href="#c">C</a></li>
+          <li><a href="#c-1">C++</a></li>
+          <li><a href="#clojure">Clojure</a></li>
+          <li>
+        <a href="#computer-science">Computer Science</a>
+            <ul>
+              <li><a href="#theoretical-computer-science">Theoretical Computer Science</a></li>
+            </ul>
+          </li>
+          <li><a href="#css">CSS</a></li>
+          <li><a href="#csharp">CSharp</a></li>
+          <li><a href="#dart">Dart</a></li>
+          <li><a href="#database">Database</a></li>
+          <li><a href="#data-science">Data Science</a></li>
+          <li><a href="#deep-learning">Deep Learning</a></li>
+          <li><a href="#devops">DevOps</a></li>
+          <li><a href="#django">Django</a></li>
+          <li><a href="#docker">Docker</a></li>
+          <li><a href="#express">Express</a></li>
+          <li><a href="#ethical-hacking">Ethical Hacking</a></li>
+          <li><a href="#expo">Expo</a></li>
+          <li>
+        <a href="#fundamental-cp-algorithms">Fundamental CP algorithms</a>
+            <ul>
+              <li><a href="#algebra">Algebra</a></li>
+              <li><a href="#combinatorics">Combinatorics</a></li>
+              <li><a href="#data-structures">Data Structures</a></li>
+              <li><a href="#dynamic-programming">Dynamic Programming</a></li>
+              <li><a href="#graph-theory">Graph Theory</a></li>
+              <li><a href="#linear-algebra">Linear Algebra</a></li>
+              <li><a href="#string-processing">String Processing</a></li>
+            </ul>
+          </li>
+          <li><a href="#flask">Flask</a></li>
+          <li><a href="#flutter">Flutter</a></li>
+          <li><a href="#git">GIT</a></li>
+          <li><a href="#github">GitHub</a></li>
+          <li><a href="#glsl">GLSL</a></li>
+          <li><a href="#go">Go</a></li>
+          <li><a href="#graphql">GraphQL</a></li>
+          <li><a href="#html">HTML</a></li>
+          <li><a href="#ionic">Ionic</a></li>
+          <li><a href="#java">Java</a></li>
+          <li><a href="#javascript">Javascript</a></li>
+          <li><a href="#kubernetes">Kubernetes</a></li>
+          <li><a href="#laravel">Laravel</a></li>
+          <li><a href="#less">LESS</a></li>
+          <li><a href="#linux">Linux</a></li>
+          <li><a href="#machine-learning">Machine Learning</a></li>
+          <li><a href="#magento">Magento</a></li>
+          <li><a href="#markdown">Markdown</a></li>
+          <li><a href="#mysql">MySQL</a></li>
+          <li><a href="#nodejs">NodeJS</a></li>
+          <li><a href="#operating-systems">Operating Systems</a></li>
+          <li><a href="#php">PHP</a></li>
+          <li><a href="#postgresql">PostgreSQL</a></li>
+          <li><a href="#power-automate">Power Automate</a></li>
+          <li><a href="#python">Python</a></li>
+          <li><a href="#react">React</a></li>
+          <li><a href="#react-native">React Native</a></li>
+          <li><a href="#regular-expressions">Regular Expressions</a></li>
+          <li><a href="#ruby">Ruby</a></li>
+          <li><a href="#rust">Rust</a></li>
+          <li><a href="#sass">Sass</a></li>
+          <li><a href="#shell">Shell</a></li>
+          <li><a href="#spring">Spring</a></li>
+          <li><a href="#svelte">Svelte</a></li>
+          <li><a href="#swift">Swift</a></li>
+          <li><a href="#system-design">System Design</a></li>
+          <li><a href="#terraform">Terraform</a></li>
+          <li><a href="#testing">Testing</a></li>
+          <li><a href="#typescript">Typescript</a></li>
+          <li><a href="#unity">Unity</a></li>
+          <li><a href="#vue">Vue</a></li>
+          <li><a href="#web-accessibility">Web Accessibility</a></li>
+          <li><a href="#web-development">Web Development</a></li>
+          <li><a href="#webpack">Webpack</a></li>
+          <li>
+        <a href="#others">Others</a>
+            <ul>
+              <li><a href="#cheat-sheets">Cheat Sheets</a></li>
+              <li><a href="#design">Design</a></li>
+              <li><a href="#free-hosting">Free Hosting</a></li>
+              <li><a href="#open-source">Open Source</a></li>
+              <li><a href="#standard-template-library">Standard Template Library</a></li>
+              <li><a href="#vs-code">VS Code</a></li>
+              <li><a href="#tools">Tools</a></li>
+              <li><a href="#talks-and-podcasts">Talks and Podcasts</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+</div>
         <a class="page-link github-link" href="https://github.com/shahednasser/awesome-resources">
           <i class="fab fa-github"></i>
         </a>
@@ -15,3 +120,40 @@
       </div>
     </div>
 </header>
+
+<style>
+/* code referenced from https://www.w3schools.com/howto/howto_css_dropdown.asp */
+
+  .dropbtn{
+    background:none;
+    color:white;
+    font-size:2rem;
+    border:none; 
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+    max-height: 90vh;
+    overflow:auto;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content li:hover {background-color: #ddd;}
+
+  .dropdown:hover .dropdown-content {display: block;}
+
+</style>
